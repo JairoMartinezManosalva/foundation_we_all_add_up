@@ -1,5 +1,5 @@
 footer {
-    background-color: #f2581a;
+    background-color: #212121;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -52,5 +52,5 @@ ul li a:hover {
 
 .footer-section .social-logo:hover {
     opacity: 0.8;
-    color: #000;
+    color: #f2581a;
 }

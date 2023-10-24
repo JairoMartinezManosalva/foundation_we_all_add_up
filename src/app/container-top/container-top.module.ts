@@ -11,6 +11,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -33,6 +34,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatButtonModule,
     FlexLayoutModule,
     MatExpansionModule,
+    AppRoutingModule
   ]
 })
 export class ContainerTopModule { }

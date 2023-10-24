@@ -3,11 +3,10 @@
     <div class="row">
       <div class="container_logo">
         <div class="logo">
-          <a href="">
+          <a class="card" href="/home">
             <i class="fa-solid fa-handshake"></i>
             <h2>Fundación Todos Sumamos</h2>
           </a>
-          <!-- <img src="" alt="logo"> -->
         </div>
       </div>
       <div class="container_menu">
@@ -18,14 +17,18 @@
         </div>
         <div class="menu" [class.menuClasse]="menuVariable">
           <ul>
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Programas</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Trabaja con nosotros</a></li>
-            <li><a href="#"><i class="fa-solid fa-hand-holding-heart"></i>Quiero donar</a></li>
+            <li><nav><a href="/sobre-nosotros">Sobre Nosotros</a></nav></li>
+            <li><a href="/programas">Programas</a></li>
+            <li><a href="/noticias">Noticias</a></li>
+            <li><a href="/trabaja-con-nosotros">Trabaja con nosotros</a></li>
+            <li><a href="/quiero-donar"><i class="fa-solid fa-hand-holding-heart"></i>Quiero donar</a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </header>
+<div class="container_route">
+  <router-outlet></router-outlet>
+</div>
+
