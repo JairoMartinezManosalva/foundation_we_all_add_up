@@ -1,0 +1,31 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="container_logo">
+        <div class="logo">
+          <a href="">
+            <i class="fa-solid fa-handshake"></i>
+            <h2>Fundación Todos Sumamos</h2>
+          </a>
+          <!-- <img src="" alt="logo"> -->
+        </div>
+      </div>
+      <div class="container_menu">
+        <div class="menu_icon" [class.menu_iconClass]="menu_icon_variable" (click)="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu" [class.menuClasse]="menuVariable">
+          <ul>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Programas</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#"><i class="fa-solid fa-hand-holding-heart"></i>Quiero donar</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
