@@ -16,6 +16,7 @@
   <script async="true" src="https://kit.fontawesome.com/bfe8a34919.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body class="mat-typography">
   <app-root></app-root>
@@ -25,7 +26,7 @@
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
-  
+
     // Your web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
@@ -37,7 +38,7 @@
       appId: "1:192710718495:web:8ad401071e602c0a09112a",
       measurementId: "G-WCGG7C7SX6"
     };
-  
+
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);

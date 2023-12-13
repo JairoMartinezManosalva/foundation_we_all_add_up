@@ -1,0 +1,16 @@
+<div class="modal {{ size }}">
+  <div class="modal-header">
+    <i class="fa-solid fa-handshake icono-fts"></i>
+    <h2>{{ title }}</h2>
+    <span class="modal-close" (click)="close()">✕</span>
+  </div>
+  <div class="modal-content">
+    <p>{{ content }}</p>
+    <ng-content></ng-content>
+  </div>
+  <div class="modal-footer">
+    <div class="boton"><a (click)="submit()" class="btn btn-primary pull-right">Aceptar</a></div>
+  </div>
+</div>
+
+<div class="modal-backdrop" (click)="close()"></div>

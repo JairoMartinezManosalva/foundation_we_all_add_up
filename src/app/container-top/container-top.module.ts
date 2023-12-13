@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { AppRoutingModule } from '../app-routing.module';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 
 
@@ -34,7 +35,8 @@ import { AppRoutingModule } from '../app-routing.module';
     MatButtonModule,
     FlexLayoutModule,
     MatExpansionModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatSlideToggleModule
   ]
 })
 export class ContainerTopModule { }

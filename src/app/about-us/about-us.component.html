@@ -1,5 +1,46 @@
 <div class="container">
-    <div class="row">
-        <h2>Sobre Nosotros</h2>
+  <div class="row">
+    <h2>Sobre Nosotros</h2>
+  </div>
+  <div class="col s12 m6">
+    <div class="video-container">
+      <iframe src="http://www.youtube.com/embed/36YnV9STBqc?wmode=opaque" frameborder="0" allowfullscreen></iframe>
     </div>
+  </div>
+  <div class="col_card">
+    <div class="card">
+      <div class="container_img">
+        <img src="assets/image/apreton-manos-senal-saludo.jpg" alt="apreton-manos-senal-saludo">
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">QUIÉNES SOMOS</h2>
+        <p class="card-text">Somos una organización sin animo de lucro tiene como objetivo acompañar y asesorar jóvenes de Colombia para fomentar el desarrollo humano, social y cultural involucrando diferentes tipos de actividades y disciplinas.</p>
+        <div class="boton"><a (click)="openModal(modalTemplate)" class="btn btn-primary pull-right">Saber más</a></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="container_img">
+        <img src="assets/image/apreton-manos-senal-saludo.jpg" alt="apreton-manos-senal-saludo">
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">MISIÓN</h2>
+        <p class="card-text">Apoyar procesos de formación y desarrollo de talento humano  en las comunidades de manera inclusiva y con responsabilidad social.</p>
+        <div class="boton"><a (click)="openModalMision(modalTemplate)" class="btn btn-primary pull-right">Saber más</a></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="container_img">
+        <img src="assets/image/apreton-manos-senal-saludo.jpg" alt="apreton-manos-senal-saludo">
+      </div>
+      <div class="card-body">
+        <h2 class="card-title">VISIÓN</h2>
+        <p class="card-text">Ser una fundación líder en procesos de formacion y desarrollo de talento humano para el año 2028 y reconocida a nivel nacional.</p>
+        <div class="boton"><a (click)="openModalVision(modalTemplate)" class="btn btn-primary pull-right">Saber más</a></div>
+      </div>
+    </div>
+  </div>
 </div>
+<ng-template #modalTemplate>
+  <div></div>
+</ng-template>
+<app-boton-whatsapp></app-boton-whatsapp>

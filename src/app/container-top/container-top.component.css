@@ -9,7 +9,7 @@ header {
 
 .logo a {
   text-decoration: none;
-  color: white;  
+  color: white;
   font-size: xx-large;
 }
 
@@ -65,9 +65,14 @@ i.fa-solid.fa-hand-holding-heart {
   margin-right: 10px;
 }
 
+.container_route{
+  margin: 102px 0px 15px;
+}
+
 @media(max-width: 999px) {
   h2 {
-    font-size: 14px;
+    top: -8px;
+    font-size: 16px;
   }
 
   .menu {
@@ -100,7 +105,7 @@ i.fa-solid.fa-hand-holding-heart {
     display: inline-block;
     position: relative;
     right: 0;
-    top: -50px;
+    top: -56px;
   }
 
   .menu_icon span {
@@ -134,8 +139,4 @@ i.fa-solid.fa-hand-holding-heart {
     transition: 0.4s ease-in-out;
   }
 
-}
-
-.container_route{
-  margin-top: 73px;
 }
