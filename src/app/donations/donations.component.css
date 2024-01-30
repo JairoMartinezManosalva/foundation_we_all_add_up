@@ -135,6 +135,7 @@ img.img-cover{
   background: linear-gradient(0deg, #313338 15%, #f2581a 52%, #313338);
   mix-blend-mode: multiply;
   transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
   align-items: center;
   position: absolute;
   display: flex;
@@ -153,6 +154,7 @@ img.img-cover{
   width: 90%;
   z-index: -1;
   transition: 0.4s;
+  -webkit-transition: 0.4s;
   align-items: center;
   position: absolute;
   display: flex;
@@ -170,6 +172,7 @@ img.img-cover{
   position: absolute;
   text-decoration: none;
   transition: 0.3s;
+  -webkit-transition: 0.3s;
 }
 
 .donations-box .btn-box:hover {
@@ -268,6 +271,7 @@ h1.titulo-descripcion.text-left {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 button, input {
@@ -322,6 +326,7 @@ button, input, optgroup, select, textarea {
   font-size: 1rem;
   line-height: 1.5;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 button, select {
@@ -428,13 +433,19 @@ h2.titulo-descripcion.text-left {
 
   .text-box {
     view-timeline-name: --image;
+    -webkit-view-timeline-name: --image;
     view-timeline-axis: block;
+    -webkit-view-timeline-axis: block;
 
     animation-timeline: --image;
+    -webkit-animation-timeline: --image;
     animation-name: show;
+    -webkit-animation-name: show;
 
     animation-range: entry 70% cover 65%;
+    -webkit-animation-range: entry 70% cover 65%;
     animation-fill-mode: backwards;
+    -webkit-animation-fill-mode: backwards;
   }
 
   @keyframes showhover {
@@ -448,6 +459,7 @@ h2.titulo-descripcion.text-left {
       background: linear-gradient(0deg, #313338 15%, #f2581a 52%, #313338);
       mix-blend-mode: multiply;
       transition: opacity 1s ease-in-out;
+      -webkit-transition: opacity 1s ease-in-out;
       align-items: center;
       position: absolute;
       display: flex;
@@ -463,13 +475,19 @@ h2.titulo-descripcion.text-left {
 
   .donations-box .hover-box{
     view-timeline-name: --image;
+    -webkit-view-timeline-name: --image;
     view-timeline-axis: block;
+    -webkit-view-timeline-axis: block;
 
     animation-timeline: --image;
+    -webkit-animation-timeline: --image;
     animation-name: showhover;
+    -webkit-animation-name: showhover;
 
     animation-range: entry 70% cover 70%;
+    -webkit-animation-range: entry 70% cover 70%;
     animation-fill-mode: backwards;
+    -webkit-animation-fill-mode: backwards;
   }
 
   @keyframes showhovertitle {
@@ -484,13 +502,19 @@ h2.titulo-descripcion.text-left {
 
   .donations-box .title-box{
     view-timeline-name: --image;
+    -webkit-view-timeline-name: --image;
     view-timeline-axis: block;
+    -webkit-view-timeline-axis: block;
 
     animation-timeline: --image;
+    -webkit-animation-timeline: --image;
     animation-name: showhovertitle;
+    -webkit-animation-name: showhovertitle;
 
     animation-range: entry 70% cover 50%;
+    -webkit-animation-range: entry 70% cover 50%;
     animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
   }
 
   .container-descripcion {
