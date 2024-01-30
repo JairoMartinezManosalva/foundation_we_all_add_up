@@ -1,20 +1,63 @@
-<div class="container">
-  <div class="row">
-    <h2>Súmate, contigo podemos!</h2>
+<swiper-container
+  navigation="true"
+  pagination="true"
+  loop="false">
+  <swiper-slide>
+    <img class="image-swiper" src="assets/image/Banner-16.png" alt="">
+    <div class="container-swiper">
+      <h2 class="tittle-swiper">Fundación Todos Sumamos</h2>
+    <p class="text-swiper">Súmate, contigo podemos!</p>
+    </div>
+  </swiper-slide>
+  <swiper-slide>
+    <img class="image-swiper" src="assets/image/Banner-09.png" alt="">
+    <div class="container-swiper">
+      <h2 class="tittle-swiper">Tu contribución marca la diferencia.</h2>
+    <p class="text-swiper">Súmate, contigo podemos!</p>
+    </div>
+  </swiper-slide>
+  <swiper-slide>
+    <img class="image-swiper" src="assets/image/Banner-13.png" alt="">
+    <div class="container-swiper">
+      <h2 class="tittle-swiper">Los jovenes merecen un mejor futuro.</h2>
+    <p class="text-swiper">Súmate, contigo podemos!</p>
+    </div>
+  </swiper-slide>
+</swiper-container>
+<div class="container-descripcion">
+  <div class="left-descripcion">
+    <div class="box-descripcion">
+      <h1 class="titulo-descripcion text-left"> En la Fundación Todos Sumamos </h1>
+      <p class="text-left texto-descripcion">
+        Estamos comprometidos con marcar una diferencia significativa en
+        las vidas de quienes forman parte de nuestra comunidad.
+        Nuestro objetivo es crear oportunidades, inspirar el aprendizaje y promover
+        un desarrollo humano, social y cultural duradero.
+        Unidos, trabajamos incansablemente para construir un futuro
+        donde todos puedan alcanzar su máximo potencial y contribuir al
+        progreso sostenible de nuestra sociedad.
+      </p>
+    </div>
+  </div>
+  <div class="right-descripcion">
+    <img alt="" src="assets/image/descripcion-nosotros1.png" class="image-descripcion">
   </div>
 </div>
-
-<div class="container">
-  <div id="inner" class="inner">
-    <div class="images-wrapper" #imgDiv (click)="selectedCard($event)"></div>
-    <div id="prev" class="slider__navbutton" (click)="onClickRow('prev')"></div>
-    <div id="next" class="slider__navbutton" (click)="onClickRow('next')"></div>
-    <div class="slider__nav">
-      <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [value]="radioButtonId">
-        <mat-radio-button color='primary' class="example-radio-button" *ngFor="let boton of arrUrlIMG; let i=index"
-          [value]="boton" [checked]="true" (click)="onClickRadioBoton(i)">
-        </mat-radio-button>
-      </mat-radio-group>
+<div class="container-info">
+  <div class="left-info">
+    <div class="box-info">
+      <h2 class="titulo-info text-left"> Tú también puedes ayudar. </h2>
+      <p class="text-left texto-info">
+        Tu donación ayudará a acompañar y asesorar jóvenes de Colombia
+        para fomentar su desarrollo integral, financiará y facilitará
+        su inclusión en diferentes tipos de actividades, disciplinas y proyectos productivos.
+      </p>
+      <p class="text-left texto-info">
+        Hacer una donación es una forma de tender una mano amiga.
+        Incluso con una pequeña donación, puedes ser parte de un gran cambio.
+        Únete haciendo una donación en Dinero, en Especie o convirtiendote en un Aliado Estratégico.
+      </p>
+      <div class="boton"><a href="/quiero-donar" class="btn btn-primary pull-right">Saber más</a></div>
     </div>
   </div>
 </div>

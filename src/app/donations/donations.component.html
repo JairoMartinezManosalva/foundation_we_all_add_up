@@ -1,34 +1,173 @@
 <div class="donations">
-    <img src="assets/image/circulo-huellas-manos.jpg" alt="">
-
-    <div class="steps">
-      <div class="tittle_donations">
-        <h2>CONOCE AQUÍ
-          CÓMO AYUDAR</h2>
-        <i class="fa-solid fa-hand-holding-heart"></i>
-      </div>
-      <div class="step_1">
-        <h2 class="tittle_step">1. Aporte en dinero</h2>
-        <p class="text_step">Ingresa www.fundaciontodossumamos.org y
-          haz tu donación para ayudar.
-          Davivienda cuenta de ahorros No.
-          Nequi y Daviplata 3102021718</p>
-      </div>
-      <div class="step_2">
-        <h2 class="tittle_step">2. Aporte en especie</h2>
-        <ul class="text_step">
-          <li>Productos de aseo</li>
-          <li>Juguetes</li>
-          <li>Implementos deportivos</li>
-          <li>Utiles escolares</li>
-        </ul>
-      </div>
-      <div class="step_3">
-        <h2 class="tittle_step">3. Aporte como aliado</h2>
-        <p class="text_step">De acuerdo con tus habilidades y conocimientos
-          puede hacer parte de los programas de la
-          fundación.</p>
+  <img class="image-donations" src="assets/image/Banner-donacion.png" alt="">
+  <div class="container-donations">
+    <h1 class="tittle-donations">Donaciones <span>-</span>Fundación Todos Sumamos</h1>
+    <p class="text-donations">Tu contribución marca la diferencia en las vidas que tocamos cada día.</p>
+  </div>
+</div>
+<div class="donations-wrap">
+  <div class="sec-name-wrap">
+    <div class="text-sec">
+      <h3>Así puedes ayudar</h3>
+    </div>
+  </div>
+  <div class="donations-box">
+    <div class="box-image">
+      <img src="assets/image/Donacion-card-05.png" alt="" class="img-cover">
+    </div>
+    <div class="title-box">
+      <h2>Apoyo Financiero</h2>
+    </div>
+    <div class="hover-box"></div>
+    <div class="text-box">
+      <p>Convierte tu apoyo financiero en oportunidades concretas para el crecimiento y
+        desarrollo. Tu donación es una inversión directa en un futuro lleno de posibilidades.
+      </p>
+      <a (click)="onSubmitDonation()" class="btn-box">¡Donar ahora!</a>
+    </div>
+  </div>
+  <div class="donations-box">
+    <div class="box-image">
+      <img src="assets/image/Donacion-card-04.png" alt="" class="img-cover">
+    </div>
+    <div class="title-box">
+      <h2>Ayuda en especie</h2>
+    </div>
+    <div class="hover-box"></div>
+    <div class="text-box">
+      <p>Tu donación en especie es un regalo tangible que construye
+        caminos sólidos hacia el éxito. Desde material educativo
+        hasta equipos deportivos, cada bien contribuye
+        significativamente al desarrollo integral de quienes
+        más lo necesitan.
+      </p>
+      <a (click)="onSubmitDonationInKind()" class="btn-box">¡Sumate ahora!</a>
+    </div>
+  </div>
+  <div class="donations-box">
+    <div class="box-image">
+      <img src="assets/image/Donacion-card-02.png" alt="" class="img-cover">
+    </div>
+    <div class="title-box">
+      <h2>Aliado estratégico</h2>
+    </div>
+    <div class="hover-box"></div>
+    <div class="text-box">
+      <p>Únete a nosotros a través de alianzas estratégicas,
+        multiplicamos el impacto de nuestro apoyo integral,
+        generando un cambio significativo en la vida de
+        comunidades enteras.
+      </p>
+      <a class="btn-box" (click)="onSubmitAlly()">¡Únete ahora!</a>
+    </div>
+  </div>
+</div>
+<div class="container-descripcion" *ngIf="isDonation" id="content">
+  <div class="left-descripcion">
+    <div class="box-descripcion">
+      <h2 class="titulo-descripcion text-left">Apoyo Financiero</h2>
+      <h3>
+        Puedes realizar la consiganción a:
+      </h3>
+      <p class="text-left texto-descripcion">
+        Cuenta de ahorros Bancolombia
+        Número 337-000047-83
+      </p>
+    </div>
+  </div>
+  <div class="right-descripcion">
+    <img alt="" src="assets/image/Donacion-info-11.png" class="image-descripcion">
+  </div>
+</div>
+<div class="container-descripcion" *ngIf="isDonationInKind" id="content">
+  <div class="left-descripcion">
+    <div class="box-descripcion">
+      <div class="container-form">
+        <h2 class="titulo-descripcion text-left">Ayuda en especie</h2>
+        <p class="text-left texto-descripcion">Ponte en contacto con nosotros, ¡Escríbenos!</p>
+        <form action="https://formsubmit.co/fundaciontodossumamos@gmail.com" method="POST" formGroup="dataContact">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" name="name" class="form-control" placeholder="Nombre" formControlName="name" required minlength="4" maxlength="40">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="email" name="email" class="form-control" placeholder="Correo electrónico" formControlName="email" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="tel" name="tel" class="form-control" placeholder="Teléfono" formControlName="tel" required pattern="3[0-9]{9,9}">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Mensaje" class="form-control" name="message" rows="5" formControlName="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
+          </div>
+          <input type="hidden" name="_next" value="http://localhost:4200/gracias">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
       </div>
     </div>
+  </div>
+  <div class="right-descripcion">
+    <img alt="" src="assets/image/Donacion-info-01.png" class="image-descripcion">
+  </div>
 </div>
+<div class="container-descripcion" *ngIf="isAlly" id="content">
+  <div class="left-descripcion">
+    <div class="box-descripcion">
+      <div class="container-form">
+        <h2 class="titulo-descripcion text-left">Aliado estratégico</h2>
+        <p class="text-left texto-descripcion">Ponte en contacto con nosotros, ¡Escríbenos!</p>
+        <form action="https://formsubmit.co/fundaciontodossumamos@gmail.com" method="POST" formGroup="dataContact">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" name="name" class="form-control" placeholder="Nombre" formControlName="name" required minlength="4" maxlength="40">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="email" name="email" class="form-control" placeholder="Correo electrónico" formControlName="email" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="tel" name="tel" class="form-control" placeholder="Teléfono" formControlName="tel" required pattern="3[0-9]{9,9}">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Mensaje" class="form-control" name="message" rows="5" formControlName="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
+          </div>
+          <input type="hidden" name="_next" value="http://localhost:4200/gracias">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="right-descripcion">
+    <img alt="" src="assets/image/Donacion-info-12.png" class="image-descripcion">
+  </div>
+</div>
+<ng-template #modalTemplate>
+  <div></div>
+</ng-template>
 <app-boton-whatsapp></app-boton-whatsapp>

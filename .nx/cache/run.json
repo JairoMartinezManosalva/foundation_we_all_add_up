@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx serve",
+    "startTime": "2024-01-22T22:39:39.098Z",
+    "endTime": "2024-01-22T23:14:43.633Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "foundation_we_all_add_up:serve:development",
+      "target": "serve",
+      "projectName": "foundation_we_all_add_up",
+      "hash": "16464025918080867620",
+      "startTime": "2024-01-22T22:39:39.104Z",
+      "endTime": "2024-01-22T23:14:43.631Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

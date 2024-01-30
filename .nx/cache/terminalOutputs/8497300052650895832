@@ -1,0 +1,7 @@
+[1m[31m****************************************************************************************[39m[22m
+[1m[31mThis is a simple server for use in testing or debugging Angular applications locally.[39m[22m
+[1m[31mIt hasn't been reviewed for security issues.[39m[22m
+[1m[31m[39m[22m
+[1m[31mDON'T USE IT FOR PRODUCTION![39m[22m
+[1m[31m****************************************************************************************[39m[22m
+[36m⠋[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: setup)...

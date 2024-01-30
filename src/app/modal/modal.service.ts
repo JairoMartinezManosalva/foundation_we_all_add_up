@@ -18,7 +18,7 @@ export class ModalService {
     @Inject(DOCUMENT) private document: Document
   ) {}
 
-  open(content: TemplateRef<any>, options?: { size?: string; title?: string; content?: string }) {
+  open(content: TemplateRef<any>, options?: { size?: string; title?: string; content?: string; boton?: boolean }) {
     const modalComponentFactory = this.resolver.resolveComponentFactory(
       ModalComponent
     );

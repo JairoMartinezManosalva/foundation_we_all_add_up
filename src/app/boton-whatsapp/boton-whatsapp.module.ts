@@ -13,6 +13,6 @@ import { BotonWhatsappComponent } from './boton-whatsapp.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
 })
 export class BotonWhatsappModule { }

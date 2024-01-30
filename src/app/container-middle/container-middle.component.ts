@@ -1,9 +1,11 @@
-import { AfterViewInit, Component, ElementRef, HostBinding, HostListener, Input, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostBinding, HostListener, Input, OnDestroy, OnInit, Renderer2, ViewChild, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-container-middle',
   templateUrl: './container-middle.component.html',
-  styleUrls: ['./container-middle.component.css']
+  styleUrls: ['./container-middle.component.css'],
+  // Esto es necesario para manipular Swiper en CSS
+  //encapsulation: ViewEncapsulation.None,
 })
 export class ContainerMiddleComponent implements OnInit, AfterViewInit, OnDestroy {
 

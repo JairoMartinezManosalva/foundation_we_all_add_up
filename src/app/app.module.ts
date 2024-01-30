@@ -1,6 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { FooterModule } from './footer/footer.module';
@@ -16,6 +15,11 @@ import { BotonWhatsappModule } from './boton-whatsapp/boton-whatsapp.module';
 import { AboutUsModule } from './about-us/about-us.module';
 import { ContainerMiddleModule } from './container-middle/container-middle.module';
 import { DonationsModule } from './donations/donations.module';
+// import function to register Swiper custom elements
+import { register } from 'swiper/element/bundle';
+import { LetsWorkModule } from './lets-work/lets-work.module';
+// register Swiper custom elements
+register();
 
 @NgModule({
   declarations: [
@@ -36,7 +40,8 @@ import { DonationsModule } from './donations/donations.module';
     BotonWhatsappModule,
     AboutUsModule,
     ContainerMiddleModule,
-    DonationsModule
+    DonationsModule,
+    LetsWorkModule
   ],
   providers: [],
   bootstrap: [AppComponent],

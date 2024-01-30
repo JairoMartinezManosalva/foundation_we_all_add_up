@@ -1,7 +1,59 @@
-<div class="container">
-    <div class="row">
-        <h2>Trabaja con Nosotros</h2>
-    </div>
-
+<div class="lets-work">
+  <img class="image-lets-work" src="assets/image/Banner-17.png" alt="">
+  <div class="container-lets-work">
+    <h1 class="tittle-lets-work">Únete como Voluntario.</h1>
+    <p class="text-lets-work">
+      Llamanos:
+      <a href="tel:+573102237454"><i class="fa-solid fa-phone"></i> +57 310 2237454</a>
+      <span>-</span>Escríbenos al correo:
+      <a href="mailto:gerencia@fundaciontodossumamos.org"><i class="fa-solid fa-envelope"></i> gerencia@fundaciontodossumamos.org</a>
+      <span>-</span>O completa el siguiente formulario:
+    </p>
+  </div>
 </div>
+<div class="container-descripcion">
+  <div class="left-descripcion">
+    <div class="box-descripcion">
+      <div class="container-form">
+        <h2 class="titulo-descripcion text-left">Voluntariado</h2>
+        <p class="text-left texto-descripcion">Ponte en contacto con nosotros, ¡Escríbenos!</p>
+        <form action="https://formsubmit.co/fundaciontodossumamos@gmail.com" method="POST" formGroup="dataContact">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" name="name" class="form-control" placeholder="Nombre" formControlName="name" required minlength="4" maxlength="40">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="email" name="email" class="form-control" placeholder="Correo electrónico" formControlName="email" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="tel" name="tel" class="form-control" placeholder="Teléfono" formControlName="tel" required pattern="3[0-9]{9,9}">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Mensaje" class="form-control" name="message" rows="5" formControlName="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
+          </div>
+          <input type="hidden" name="_next" value="http://localhost:4200/gracias">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="right-descripcion">
+    <img alt="" src="assets/image/Donacion-info-14.png" class="image-descripcion">
+  </div>
+</div>
+<app-boton-whatsapp></app-boton-whatsapp>
 

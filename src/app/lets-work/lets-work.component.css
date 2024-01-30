@@ -1,0 +1,235 @@
+.lets-work {
+  margin-bottom: -7px;
+}
+img.image-lets-work {
+  width: 100%;
+  max-height: 480px;
+}
+.container-lets-work {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  color: #fff;
+}
+.tittle-lets-work {
+  background-color: #2f425b;
+  color: #fff;
+  margin-bottom: 0px;
+  padding: 15px 25px;
+  font-size: 56px;
+}
+.text-lets-work span {
+  font-size: 0;
+  display: block;
+}
+.text-lets-work {
+  background-color: rgba(49,51,56,.9);
+  padding: 15px 25px;
+  max-width: 50%;
+  width: 100%;
+  color: #fff;
+  margin: 0px;
+}
+.container-descripcion{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -16px;
+  padding: 0px;
+}
+.left-descripcion{
+  background-color: #1D5759;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 15px 0px;
+}
+.right-descripcion{
+  width: 50%;
+  margin-bottom: -17px;
+}
+img.image-descripcion {
+  width: 100%;
+  height: 100%;
+}
+p.text-left.texto-descripcion {
+  line-height: 26px;
+}
+h1.titulo-descripcion.text-left {
+  font-size: 36px;
+  margin-top: 0;
+  line-height: 1;
+}
+.box-descripcion{
+  width: 80%;
+}
+.container-form{
+  width: 100%;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+.form-row>.col, .form-row>[class*=col-] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+button, input {
+  overflow: visible;
+}
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn-group-lg>.btn, .btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.btn-dark {
+  color: #fff;
+  background-color: #FFF;
+  border-color: #343a40;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  width: 40%;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+button, select {
+  text-transform: none;
+  overflow: visible;
+}
+textarea.form-control {
+  height: auto;
+}
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #f2581a;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #2c5444;
+}
+.btn-dark:hover {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+h2.titulo-descripcion.text-left {
+  font-size: 36px;
+  line-height: 1;
+  margin-top: 15px;
+}
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+@media(max-width: 999px) {
+  img.image-lets-work {
+    width: 100%;
+    min-height: 230px;
+  }
+  .container-lets-work{
+    position: relative;
+    width: 100%;
+  }
+  .tittle-lets-work{
+    padding: 5px 10px;
+    font-size: 22px;
+    min-height: 76px;
+    margin-top: -7px;
+  }
+  .text-lets-work{
+    padding: 5px 10px;
+    width: auto;
+    min-height: 48px;
+    max-width: 100%;
+    margin: -1px;
+  }
+  .lets-work {
+    margin-bottom: 0px;
+    margin-top: 81px;
+  }
+  .container-descripcion {
+    flex-direction: column-reverse;
+  }
+  .left-descripcion{
+    width: 100%;
+    padding: 15px 17px 15px 13px;
+  }
+  .box-descripcion {
+    width: 100%;
+  }
+  .right-descripcion {
+    width: 100%;
+    margin-bottom: -7px;
+  }
+}
