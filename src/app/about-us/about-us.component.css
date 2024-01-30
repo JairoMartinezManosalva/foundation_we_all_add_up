@@ -104,7 +104,7 @@ h2.titulo-descripcion.text-left {
     width: auto;
     min-height: 48px;
     max-width: 100%;
-    margin: -1px;
+    margin: 0px;
   }
   .about-us {
     margin-bottom: 0px;
