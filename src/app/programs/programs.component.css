@@ -388,7 +388,7 @@ h2.titulo-descripcion.text-left {
 
   .programs-box {
     width: 100%;
-    height: 320px;
+    height: 350px;
   }
 
   .title-box {
@@ -401,6 +401,7 @@ h2.titulo-descripcion.text-left {
 
   .text-box{
     left: 15px;
+    top: 15%;
   }
 
   @keyframes show {

@@ -117,8 +117,9 @@ h2.titulo-descripcion.text-left {
     flex-direction: column;
   }
   .left-descripcion{
-    width: 100%;
+    width: auto;
     padding: 15px 17px 15px 13px;
+    max-width: 100%
   }
   .box-descripcion {
     width: 100%;
